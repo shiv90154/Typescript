@@ -1,61 +1,61 @@
-// Typescript 
-// types 
-// primitives--------- reference
+function abcd(variable:number | string){
+if (typeof variable === 'number'){
+    variable.toFixed(2);
+}
+else if (typeof variable ==='string'){
+    variable.toLowerCase
+}
+}
+ abcd(12)
 
+Inter section types 
 
-// number boolean undefinnde string charchter  
-
-// objects classes funtion arrys and tupless
-
-
-
- let a =12;
- let b = a;
-  a= a+2;
-
-
-let arr =[1,2,3,4];
-let arr2=arr;
-
-   arr2.pop();
+let a: number | string;
+a= 12;
+a="shiv"
 
 
 
+let a : number & string:
 
+type Classmates = {
+    section: string
+}
+type Student = {
+    name: string
+}
+type ClassmateInStudents = Classmates & Student;
+let a: ClassmateInStudents = {
+    name: "shiv",
+    section:'a'
 
-
-
-
-// there is no differences in js and ts only ther is add some new feature in ts
-
-let a:number;
-
-let arr :[];
- let arr:sting ;
-
-let arr2:[boolean,number,string]=[false,1,"shiv"]
-
-
-
-let variable :unknown
-
-// // variable"hey"
-
-// 111111111-----------------1111111111111
-
-
-
-// basic types 
-//  number sting boolen 
-//  arrys tuples 
-//  any unkown never void 
-//  enums
-
-
-enum Direction{
-    up ="up",
-    left="left",
-    right="right",
-    down="down"
 }
 
+type City ={
+
+    name:string,
+    population:number,
+}
+type Planet={
+    name:string,
+    cities :number
+}
+
+type citiesInplanet =City &Planet;
+let value :citiesInplanet={
+    name:"Bhalat",
+    population:1299999,
+    cities:12
+}
+console.log("hey")
+console.log("hey")
+
+
+type alias
+primitive / object
+
+type Polu={
+name :string,
+roll:number,
+email:string
+}
